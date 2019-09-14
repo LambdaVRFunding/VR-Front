@@ -7,15 +7,19 @@ import Dreamers from './pages/Dreamers';
 import Login from './pages//Login';
 import Register from './pages/Register';
 import Investors from './pages/Investors';
+import PrivateRoute from './components/Auth/PrivateRoute';
 
 function App() {
   return (
     <Router>
+      <header className="header">
+        <h1>VR Funding</h1>
+      </header>
       <Route path="/" exact component={Home} />
       <Route path="/register" component={Register} />
       <Route path="/login" component={Login} />
-      <Route path="/dreamers" component={Dreamers} />
-      <Route path="/investors" component={Investors} />
+      <PrivateRoute exact path="/dreamers" component={Dreamers} />
+      <PrivateRoute exact path="/investors" component={Investors} />
     </Router>
   );
 }
