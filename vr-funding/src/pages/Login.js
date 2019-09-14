@@ -1,11 +1,19 @@
 import React from 'react';
+import Styled from 'styled-components';
 
-function Login() {
+import LoginForm from '../components/Login/LoginForm';
+
+function Register() {
   return (
-    <div>
-      <p>Login Page</p>
-    </div>
+    <FormCont>
+      <LoginForm />
+    </FormCont>
   ) 
 }
 
-export default Login;
+const FormCont = Styled.div`
+  width: 33%;
+  margin: 0 auto;
+`;
+
+export default Register;

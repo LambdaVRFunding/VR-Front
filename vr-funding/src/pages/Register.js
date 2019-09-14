@@ -12,8 +12,7 @@ function Register() {
 }
 
 const FormCont = Styled.div`
-  width: 50%;
-  height: 50;
+  width: 33%;
   margin: 0 auto;
 `;
 
