@@ -7,7 +7,7 @@ import Dreamers from './pages/Dreamers';
 import Login from './pages//Login';
 import Register from './pages/Register';
 import Investors from './pages/Investors';
-import PrivateRoute from './components/Auth/PrivateRoute';
+import PrivateRoute from './Auth/PrivateRoute';
 
 function App() {
   return (

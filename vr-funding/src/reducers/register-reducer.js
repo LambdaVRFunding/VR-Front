@@ -20,7 +20,7 @@ export const registerReducer = (state = initialState, action) => {
         case REGISTER_SUCCESS:
             return {
                 ...state,
-                id: id,
+                id: action.payload,
                 signingUp: false
             }
         case REGISTER_FAILED:

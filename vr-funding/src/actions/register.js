@@ -11,7 +11,7 @@ export const register = creds => dispatch => {
         .then(res => {
             localStorage.setItem('token', res.data.token)
             dispatch({
-                type: PAYLOAD_SUCCESS,
+                type: REGISTER_SUCCESS,
                 payload: res.data
             })
         })
